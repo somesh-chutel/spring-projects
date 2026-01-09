@@ -1,0 +1,12 @@
+package com.demo.service;
+
+import com.demo.entity.Student;
+
+public class StudentService {
+
+		
+	public Student getAll() {
+		
+	}
+	
+}

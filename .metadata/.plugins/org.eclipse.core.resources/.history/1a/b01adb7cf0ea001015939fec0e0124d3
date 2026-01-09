@@ -1,0 +1,25 @@
+package com.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.entity.Student;
+import com.demo.entity.repo.StudentRepo;
+
+@Service
+public class StudentServiceImp {
+	
+	@Autowired
+	private StudentRepo srepo;
+
+	public List<Student> getAll() {
+		
+		return srepo.findAll();
+	}
+		
+	
+	
+}
